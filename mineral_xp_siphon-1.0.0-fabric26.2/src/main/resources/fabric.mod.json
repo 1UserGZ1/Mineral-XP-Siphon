@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "mineral_xp_siphon",
+	"version": "${version}",
+	"name": "Mineral XP Siphon",
+	"description": "右键吞食矿物获得经验，保留矿物原有功能。",
+	"authors": [
+		"DY_XiaoJiaZi"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "assets/mineral_xp_siphon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dyxiaojiazi.mineral_xp_siphon.MineralXPSiphon"
+		],
+		"fabric-datagen": [
+			"com.dyxiaojiazi.mineral_xp_siphon.MineralXPSiphonDataGenerator"
+		]
+	},
+	"mixins": [
+		"mineral_xp_siphon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
